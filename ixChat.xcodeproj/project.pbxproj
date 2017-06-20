@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		149BDD2E778A2508DB70E85C /* Pods_ixChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F609A06526C8BA995384D582 /* Pods_ixChat.framework */; };
 		B84A36D31EF90AFF00F36273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36D21EF90AFF00F36273 /* AppDelegate.swift */; };
 		B84A36D51EF90AFF00F36273 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36D41EF90AFF00F36273 /* ViewController.swift */; };
 		B84A36D81EF90AFF00F36273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84A36D61EF90AFF00F36273 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		B84A36D91EF90AFF00F36273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84A36DC1EF90AFF00F36273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84A36DE1EF90AFF00F36273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F082C680219B725F89AB3572 /* Pods-ixChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ixChat/Pods-ixChat.release.xcconfig"; sourceTree = "<group>"; };
+		F609A06526C8BA995384D582 /* Pods_ixChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ixChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC1F591D627E91EC81929E1 /* Pods-ixChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ixChat/Pods-ixChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149BDD2E778A2508DB70E85C /* Pods_ixChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45E7748956FFAA6676178A0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F609A06526C8BA995384D582 /* Pods_ixChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86C5CE2D21279965542002C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCC1F591D627E91EC81929E1 /* Pods-ixChat.debug.xcconfig */,
+				F082C680219B725F89AB3572 /* Pods-ixChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B84A36C61EF90AFF00F36273 = {
 			isa = PBXGroup;
 			children = (
 				B84A36D11EF90AFF00F36273 /* ixChat */,
 				B84A36D01EF90AFF00F36273 /* Products */,
+				86C5CE2D21279965542002C2 /* Pods */,
+				45E7748956FFAA6676178A0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B84A36E11EF90AFF00F36273 /* Build configuration list for PBXNativeTarget "ixChat" */;
 			buildPhases = (
+				543B0C0CE01FF12F2877A7BD /* [CP] Check Pods Manifest.lock */,
 				B84A36CB1EF90AFF00F36273 /* Sources */,
 				B84A36CC1EF90AFF00F36273 /* Frameworks */,
 				B84A36CD1EF90AFF00F36273 /* Resources */,
+				AECBFDC3DA6BCA5066A6E836 /* [CP] Embed Pods Frameworks */,
+				D09B835396033CC2367AA237 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		543B0C0CE01FF12F2877A7BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AECBFDC3DA6BCA5066A6E836 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ixChat/Pods-ixChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09B835396033CC2367AA237 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ixChat/Pods-ixChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B84A36CB1EF90AFF00F36273 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		B84A36E21EF90AFF00F36273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC1F591D627E91EC81929E1 /* Pods-ixChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JW7LM2822;
@@ -274,6 +350,7 @@
 		};
 		B84A36E31EF90AFF00F36273 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F082C680219B725F89AB3572 /* Pods-ixChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JW7LM2822;
