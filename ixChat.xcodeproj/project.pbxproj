@@ -9,20 +9,28 @@
 /* Begin PBXBuildFile section */
 		149BDD2E778A2508DB70E85C /* Pods_ixChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F609A06526C8BA995384D582 /* Pods_ixChat.framework */; };
 		B84A36D31EF90AFF00F36273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36D21EF90AFF00F36273 /* AppDelegate.swift */; };
-		B84A36D51EF90AFF00F36273 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36D41EF90AFF00F36273 /* ViewController.swift */; };
+		B84A36D51EF90AFF00F36273 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36D41EF90AFF00F36273 /* LoginViewController.swift */; };
 		B84A36D81EF90AFF00F36273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84A36D61EF90AFF00F36273 /* Main.storyboard */; };
 		B84A36DA1EF90AFF00F36273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84A36D91EF90AFF00F36273 /* Assets.xcassets */; };
 		B84A36DD1EF90AFF00F36273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84A36DB1EF90AFF00F36273 /* LaunchScreen.storyboard */; };
+		B84A36E51EF90D3B00F36273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B84A36E41EF90D3B00F36273 /* GoogleService-Info.plist */; };
+		B84A36E71EF90E1500F36273 /* ChannelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36E61EF90E1500F36273 /* ChannelsTableViewController.swift */; };
+		B84A36E91EF90E6E00F36273 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36E81EF90E6E00F36273 /* ChatViewController.swift */; };
+		B84A36EB1EF90EA500F36273 /* ChannelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A36EA1EF90EA500F36273 /* ChannelDto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B84A36CF1EF90AFF00F36273 /* ixChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ixChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84A36D21EF90AFF00F36273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B84A36D41EF90AFF00F36273 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B84A36D41EF90AFF00F36273 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B84A36D71EF90AFF00F36273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B84A36D91EF90AFF00F36273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84A36DC1EF90AFF00F36273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84A36DE1EF90AFF00F36273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B84A36E41EF90D3B00F36273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B84A36E61EF90E1500F36273 /* ChannelsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewController.swift; sourceTree = "<group>"; };
+		B84A36E81EF90E6E00F36273 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B84A36EA1EF90EA500F36273 /* ChannelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelDto.swift; sourceTree = "<group>"; };
 		F082C680219B725F89AB3572 /* Pods-ixChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ixChat/Pods-ixChat.release.xcconfig"; sourceTree = "<group>"; };
 		F609A06526C8BA995384D582 /* Pods_ixChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ixChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC1F591D627E91EC81929E1 /* Pods-ixChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ixChat/Pods-ixChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,12 +86,16 @@
 		B84A36D11EF90AFF00F36273 /* ixChat */ = {
 			isa = PBXGroup;
 			children = (
+				B84A36E41EF90D3B00F36273 /* GoogleService-Info.plist */,
 				B84A36D21EF90AFF00F36273 /* AppDelegate.swift */,
-				B84A36D41EF90AFF00F36273 /* ViewController.swift */,
+				B84A36D41EF90AFF00F36273 /* LoginViewController.swift */,
 				B84A36D61EF90AFF00F36273 /* Main.storyboard */,
 				B84A36D91EF90AFF00F36273 /* Assets.xcassets */,
 				B84A36DB1EF90AFF00F36273 /* LaunchScreen.storyboard */,
 				B84A36DE1EF90AFF00F36273 /* Info.plist */,
+				B84A36E61EF90E1500F36273 /* ChannelsTableViewController.swift */,
+				B84A36E81EF90E6E00F36273 /* ChatViewController.swift */,
+				B84A36EA1EF90EA500F36273 /* ChannelDto.swift */,
 			);
 			path = ixChat;
 			sourceTree = "<group>";
@@ -154,6 +166,7 @@
 				B84A36DD1EF90AFF00F36273 /* LaunchScreen.storyboard in Resources */,
 				B84A36DA1EF90AFF00F36273 /* Assets.xcassets in Resources */,
 				B84A36D81EF90AFF00F36273 /* Main.storyboard in Resources */,
+				B84A36E51EF90D3B00F36273 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84A36D51EF90AFF00F36273 /* ViewController.swift in Sources */,
+				B84A36D51EF90AFF00F36273 /* LoginViewController.swift in Sources */,
+				B84A36E71EF90E1500F36273 /* ChannelsTableViewController.swift in Sources */,
+				B84A36E91EF90E6E00F36273 /* ChatViewController.swift in Sources */,
 				B84A36D31EF90AFF00F36273 /* AppDelegate.swift in Sources */,
+				B84A36EB1EF90EA500F36273 /* ChannelDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +397,7 @@
 				B84A36E31EF90AFF00F36273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
